@@ -1,4 +1,4 @@
-CURDATE = `date +"%Y%m%d"`
+CURDATE:=`date +"%Y%m%d"`
 
 clean:
 	@rm -f adfilters*
@@ -29,11 +29,19 @@ yaml: download
 	@echo "filters:" > adfilters.yml
 	@sed 's/^/- /' adfilters >> adfilters.yml
 
-publish:
+compress:
+	@tar zcvf adfilters.tar.gz adfilters
+	@tar zcvf adfilters.host.tar.gz adfilters.host
+	@tar zcvf adfilters.txt.tar.gz adfilters.txt
+	@tar zcvf adfilters.yml.tar.gz adfilters.yml
+
+publish: compress
 	@git fetch
 	@git pull
-	@git add adfilters*
-	@echo "git commit -mS 'v$(CURDATE)'"
-	@echo "git push origin main"
+	@git add adfilters*.tar.gz
+	@git commit -S -m v$(CURDATE)
+	@git push origin main
+	@git tag -a v$(CURDATE) -m v$(CURDATE)
+	@git push origin v$(CURDATE)
 
 all: clean download adguard dnsmasq yaml

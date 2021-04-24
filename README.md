@@ -15,10 +15,10 @@ Not using `dnsmasq`? No problem. There are varoious other formats available as w
 
 | filename | presentation | suitable for... |
 |---|---|---|
-| [adfilters](https://raw.githubusercontent.com/fmasclef/adfilters/master/adfilters) | one host by line | machine processing |
-| [adfilters.host](https://raw.githubusercontent.com/fmasclef/adfilters/master/adfilters.host) | hosts file | dnsmasq, `/etc/hosts`, Windows hosts, gasmask |
-| [adfilters.txt](https://raw.githubusercontent.com/fmasclef/adfilters/master/adfilters.txt) | one host by line | AdGuard, AdGuardHome, Pi-Hole |
-| [adfilters.yml](https://raw.githubusercontent.com/fmasclef/adfilters/master/adfilters.yml) | YAML | YAML fans |
+| [adfilters](https://raw.githubusercontent.com/fmasclef/adfilters/main/adfilters.tar.gz) | one host by line | machine processing |
+| [adfilters.host](https://raw.githubusercontent.com/fmasclef/adfilters/main/adfilters.host.tar.gz) | hosts file | dnsmasq, `/etc/hosts`, Windows hosts, gasmask |
+| [adfilters.txt](https://raw.githubusercontent.com/fmasclef/adfilters/main/adfilters.txt.tar.gz) | one host by line | AdGuard, AdGuardHome, Pi-Hole |
+| [adfilters.yml](https://raw.githubusercontent.com/fmasclef/adfilters/main/adfilters.yml.tar.gz) | YAML | YAML fans |
 
 ## Cook it by yourself
 

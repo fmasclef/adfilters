@@ -9,7 +9,7 @@ The source material is obviously already cuerated. This helps a lot. Anyway, sho
     conf-file=/path/to/downloaded/adfilters.host
     addn-hosts=/path/to/downloaded/adfilters.host
 
-Not using `dnsmasq`? No problem. There are varoious other formats available as well.
+Not using `dnsmasq`? No problem. There are various other formats available as well.
 
 ## Formats
 

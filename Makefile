@@ -39,7 +39,7 @@ publish: compress
 	@git fetch
 	@git pull
 	@git add adfilters*.tar.gz
-	@git commit -S -m v$(CURDATE)
+	@git commit -m v$(CURDATE)
 	@git push origin main
 	@git tag -a v$(CURDATE) -m v$(CURDATE)
 	@git push origin v$(CURDATE)
